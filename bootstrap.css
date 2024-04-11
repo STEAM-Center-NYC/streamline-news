@@ -63,7 +63,13 @@ hr {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem; }
-
+aside {
+    width: 200px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 12px;
+    float: left;
+}
 p {
   margin-top: 0;
   margin-bottom: 1rem; }
@@ -3037,7 +3043,11 @@ input[type="button"].btn-block {
 
 .tab-content > .active {
   display: block; }
-
+.qbar{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
 .navbar {
   position: relative;
   display: flex;
