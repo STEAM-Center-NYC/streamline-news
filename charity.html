@@ -9,6 +9,113 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <style>
+    @media screen and (max-width: 379) {
+      .card-text {
+        font-size: 20px;
+      }
+
+      .card-title {
+        font-size: 25px;
+        padding-bottom: 4px;
+      }
+
+      #tagline {
+        font-size: 10px;
+      }
+
+      #carousel {
+        width: 10%;
+        margin: auto;
+      }
+
+      body {
+        width: 10%;
+        margin: auto;
+        background-color: black;
+      }
+
+      nav {
+        margin: auto;
+        width: 50%;
+      }
+
+      main {
+        margin: auto;
+        width: 30%
+      }
+    }
+
+    @media screen and (min-width: 380px) {
+      .card-text {
+        font-size: 20px;
+      }
+
+      .card-title {
+        font-size: 25px;
+        padding-bottom: 4px;
+      }
+
+      .btn {
+        height: 60%;
+      }
+
+      #carousel {
+        width: 90%;
+        margin: auto;
+      }
+
+      body {
+        width: 90%;
+      }
+
+      nav {
+        margin: auto;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      .card-text {
+        font-size: 30px;
+      }
+
+      .card-title {
+        font-size: 35px;
+        padding-bottom: 4px;
+      }
+
+      .donate {
+        width: 150px;
+        height: 60px;
+        font-size: 30px;
+      }
+
+      .donateday {
+        font-size: 40px;
+      }
+
+      #tagline {
+        font-size: 30px;
+      }
+
+      #carousel {
+        width: 90%;
+        margin: auto;
+      }
+
+      body {
+        width: 90%;
+      }
+
+      nav {
+        margin: auto;
+      }
+
+      h2 {
+        font-size: 40px;
+      }
+    }
+  </style>
   </head>
   <body>
     <nav class="navbar bg-light">
@@ -28,9 +135,9 @@
     <h1 class="text-center">Care Water</h1>
     <h2 class="text-center">Support Families Today!</h2>
     <div class="text-center">
-    <a href="onedonate.html"  type="button" class="btn btn-lg btn-primary d-grid gap-2 col-6 mx-auto my-3">Donate Today!</a>
+    <a href="onedonate.html" class="btn btn-lg bg-primary d-grid gap-2 col-6 mx-auto my-3 donateday">Donate Today!</a>
     </div>
-    <div id="carouselExample" class="carousel slide">
+    <div id="carousel" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="images/Care Water Delivery.png" class="d-block w-100" alt="Workers packing donations into a truck">
@@ -52,22 +159,22 @@
         </button>
       </div>
       <main class="container">
-        <p class="h3 text-center my-4 border-primary border-top border-bottom">Our charity provides low income families with access to clean water and personal ammenities.</p>
+        <p id="tagline" class="h3 text-center my-4 border-primary border-top border-bottom">Our charity provides low income families with access to clean water and personal ammenities.</p>
       <h2 class="wow animate__animated animate__fadeInDown text-center border-bottom border-primary mt-5">From Our Beneficiaries</h2>
       <div class="wow animate__animated animate__fadeInDown row mt-2 mb-2">
         <div class="col-sm-6 mt-2">
           <div class="card border-primary">
             <div class="card-body">
-              <h5 class="card-title border-bottom border-primary">Thelma - 26</h5>
-              <p class="card-text">Care Water helped me and my family.</p>
+              <h5 class="card-title border-bottom border-primary pb-2">"Care Water helped me and my family."</h5>
+              <p class="card-text">Thelma - 26</p>
             </div>
           </div>
         </div>
         <div class="col-sm-6 mt-2">
           <div class="card border-primary">
             <div class="card-body">
-              <h5 class="card-title border-bottom border-primary">Carson - 34</h5>
-              <p class="card-text">Care Water helped me immensely.</p>
+              <h5 class="card-title border-bottom border-primary pb-2">"Care Water helped me immensely."</h5>
+              <p class="card-text">Carson - 31</p>
             </div>
           </div>
         </div>
@@ -76,16 +183,16 @@
         <div class="col-sm-6 mt-2">
           <div class="card border-primary">
             <div class="card-body">
-              <h5 class="card-title border-bottom border-primary">Michael - 42</h5>
-              <p class="card-text">Care Water helped me get back on my feet.</p>
+              <h5 class="card-title border-bottom border-primary pb-2">"Care Water helped me get back on my feet."</h5>
+              <p class="card-text">Michael - 42</p>
             </div>
           </div>
         </div>
         <div class="col-sm-6 mt-2">
           <div class="card border-primary">
             <div class="card-body">
-              <h5 class="card-title border-bottom border-primary">Cara - 51</h5>
-              <p class="card-text">Care Water drastically improved my life.</p>
+              <h5 class="card-title border-bottom border-primary pb-2">"Care Water drastically improved my life."</h5>
+              <p class="card-text">Cara - 51</p>
             </div>
           </div>
         </div>
@@ -97,7 +204,7 @@
             <div class="card-body">
               <h5 class="card-title border-bottom border-primary">One Time Donation</h5>
               <p class="card-text">Make a one time donation.</p>
-              <a href="onedonate.html" class="btn btn-primary">Donate</a>
+              <a href="onedonate.html" class="donate btn btn-primary">Donate</a>
             </div>
           </div>
         </div>
@@ -106,7 +213,7 @@
             <div class="card-body">
               <h5 class="card-title border-bottom border-primary">Monthly Donations</h5>
               <p class="card-text">Donate a set amount per month.</p>
-              <a href="onedonate.html" class="btn btn-primary">Donate</a>
+              <a href="onedonate.html" class=" donate btn btn-primary">Donate</a>
             </div>
           </div>
         </div>
@@ -115,14 +222,14 @@
             <div class="card-body">
               <h5 class="card-title border-bottom border-primary">Yearly Donations</h5>
               <p class="card-text">Donate a set amount per year.</p>
-              <a href="onedonate.html" class="btn btn-primary">Donate</a>
+              <a href="onedonate.html" class="donate btn btn-primary">Donate</a>
             </div>
           </div>
         </div>
       </div>
       </main>
       <div class="text-center">
-      <a href="onedonate.html" type="button" class="wow animate__animated animate__fadeInDown animate__pulse btn btn-lg btn-primary d-grid gap-2 col-6 mx-auto my-3 mt-4">Donate Today!</a>
+      <a href="onedonate.html" class="wow animate__animated animate__fadeInDown animate__pulse btn btn-lg btn-primary d-grid gap-2 col-6 mx-auto my-3 mt-4 donateday">Donate Today!</a>
       </div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>

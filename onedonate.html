@@ -5,14 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Care Water</title>
     <link href="bootstrap.css" rel="stylesheet">
+    <style>
+      .form-check-label {
+        font-size: 15px;
+
+      }
+      .form-check-input {
+        font-size: 1px;
+      }
+
+      .form-check {
+        padding: 5px
+      }
+    </style>
   </head>
   <body>
-    <main class="container">
+    <main class="container border-bottom border-primary">
     <h2 class="text-center border-bottom border-primary">Thank You for Donating!</h2>
     <form>
         <div class="mb-3">
             <div class="mb-3 form-check">
-                <div>
+                <div class="text-center border-bottom border-primary">
+                  <p>How often will you be donating?</p>
                   <div class="form-check">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioOne">
                         <label class="form-check-label" for="flexRadioOne">
@@ -34,19 +48,26 @@
                 </div>
             </div>
             <div class="mb-3">
-                <label for="InputEmail" class="form-label">Email Address</label>
+              <label for="InputName" class="form-label border-bottom border-primary">Name:</label>
+              <input type="text" class="form-control" id="InputName">
+          </div>
+            <div class="mb-3">
+                <label for="InputEmail" class="form-label border-bottom border-primary">Email Address:</label>
                 <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
             </div>
           <div class="mb-3">
-            <label for="InputCreditNumber" class="form-label">Credit Card Number</label>
+            <label for="InputCreditNumber" class="form-label border-bottom border-primary">Credit Card Number:</label>
             <input type="text" class="form-control" id="InputCreditNumber">
           </div>
           <div class="mb-3">
-            <label for="InputCreditExp" class="form-label">Credit Card Expiration Date</label>
+            <label for="InputCreditExp" class="form-label border-bottom border-primary">Credit Card Expiration Date:</label>
             <input type="text" class="form-control" id="InputCreditExp">
           </div>
           <div class="text-center">
           <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+          <div class="text-center ">
+            <a href="charity.html" class="btn bg-primary mt-2">Back to Care Water</a>
           </div>
         </div>
     </form>
