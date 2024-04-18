@@ -11,11 +11,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Znamenny+Musical+Notation&family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
   <style>
     body {
       font-family: "Signika Negative", sans-serif;
     }
+
     @media screen and (max-width: 479) {
       .card-text {
         font-size: 20px;
@@ -115,6 +117,13 @@
 
       nav {
         margin: auto;
+        height: 100%;
+        width: 100%;
+      }
+
+      a.navbar-brand {
+        font-size: 25px;
+        margin: 6px;
       }
 
       h2 {
@@ -128,14 +137,14 @@
       <div class="container">
         <a class="navbar-brand" href="logo_2.jpg">
           <img src="logo_2.jpg" alt="StreamLine News Logo" width="30" height="24">
-          StreamLineNews
+          Streamline News
         </a>
-        <a class="navbar-brand" href="index.html">HomePage</a>
+        <a class="navbar-brand" href="index.html">Home</a>
         <a class="navbar-brand" href="charity.html">Donations</a>
         <a class="navbar-brand" href="news_page.html"> News </a>
         <a class="navbar-brand" href="contact.html">Contact Us</a>
         <a class="navbar-brand" href="faq.html">FAQs</a>
-        <a class="navbar-brand" href="team.html"> Meet The team</a>
+        <a class="navbar-brand" href="team.html"> Meet The Team</a>
        </div>
     </nav>
     <p class="text-center display-1 mt-4">Care Water</p>
@@ -204,7 +213,7 @@
         </div>
       </div>
       <p class="wow animate__animated animate__fadeInDown text-center border-bottom border-primary display-4 mt-5">Donation Plans</p>
-      <div class="wow animate__animated animate__fadeInLeft row">  
+      <div class="row">  
         <div class="wow animate__animated animate__fadeInLeft col-sm-6 mt-2 mb-2">
           <div class="card border-primary">
             <div class="card-body">
@@ -223,7 +232,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6 mt-2">
+        <div class="wow animate__animated animate__fadeInRight col-sm-6 mt-2">
           <div class="card border-primary">
             <div class="card-body">
               <h5 class="card-title border-bottom border-primary">Yearly Donations</h5>
