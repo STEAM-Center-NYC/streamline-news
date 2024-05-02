@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Bootstrap demo</title>
+        <title>StreamLine News</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
         <script>
@@ -15,6 +15,143 @@
         </script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" href="main.css">
+        <link href="bootstrap.css" rel="stylesheet">
+        <style>
+            body {
+              font-family: "Signika Negative", sans-serif;
+            }
+        
+            @media screen and (max-width: 479) {
+              .card-text {
+                font-size: 20px;
+              }
+        
+              .card-title {
+                font-size: 25px;
+                padding-bottom: 4px;
+              }
+        
+              #tagline {
+                font-size: 10px;
+              }
+        
+              #carousel {
+                width: 100%;
+                margin: auto;
+              }
+        
+              body {
+                width: 100%;
+                margin: auto;
+              }
+        
+              nav {
+                margin: auto;
+                width: 100%;
+              }
+        
+              main {
+                margin: auto;
+                width: 100%
+              }
+            }
+        
+            @media screen and (min-width: 480px) {
+              .card-text {
+                font-size: 20px;
+              }
+        
+              .card-title {
+                font-size: 25px;
+                padding-bottom: 4px;
+              }
+        
+              .btn {
+                height: 60%;
+              }
+        
+              #carousel {
+                width: 100%;
+                margin: auto;
+              }
+        
+              body {
+                width: 100%;
+                margin:auto
+              }
+        
+              nav {
+                margin: auto;
+              }
+            }
+        
+            @media screen and (min-width: 768px) {
+              .card-text {
+                font-size: 30px;
+              }
+        
+              .card-title {
+                font-size: 35px;
+                padding-bottom: 4px;
+              }
+        
+              .donate {
+                width: 150px;
+                height: 60px;
+                font-size: 30px;
+              }
+        
+              .donateday {
+                font-size: 40px;
+              }
+        
+              #tagline {
+                font-size: 30px;
+              }
+        
+              #carousel {
+                width: 90%;
+                margin: auto;
+              }
+        
+              body {
+                width: 90%;
+              }
+        
+              nav {
+                margin: auto;
+                height: 100%;
+                width: 100%;
+              }
+        
+              a.navbar-brand {
+                font-size: 25px;
+                margin: 6px;
+              }
+        
+              h2 {
+                font-size: 40px;
+              }
+            }
+            .navbar-brand{
+                font-family: "Signika Negative", sans-serif
+            }
+
+
+            body, .card-text, .card-title, h1, h2, h3, p {
+        color: white;
+    }
+    .navbar-brand, card-body{
+        color: #c0e0e9;
+    }
+          </style>
+    
+    
+    
+    
+    
+    
+    
     </head>
     
     <body>
@@ -29,7 +166,7 @@
         </div>
 
     <!-- Nav -->
-    <nav class="navbar bg-light">
+    <nav class="navbar ">
         <div class="container">
           <a class="navbar-brand" href="logo_2.jpg">
             <img src="images/logo_2.jpg" alt="#" width="30" height="24">
@@ -40,12 +177,12 @@
           <a class="navbar-brand" href="news_page.html"> News </a>
           <a class="navbar-brand" href="contact.html">Contact Us</a>
           <a class="navbar-brand" href="faq.html">FAQs</a>
-          <a class="navbar-brand" href="team.html"> Meet The Team</a>
+          <a class="navbar-brand" href="meettheteam.html"> Meet The Team</a>
          </div>
       </nav>
 
     <!-- About Us Heading -->
-        <div class="row bg-primary-subtle">
+        <div class="row bg-primary">
             <h2>About Us</h2>
         </div>
 
@@ -61,7 +198,7 @@
                     </p>
                 </div>
             </div>
-            <div class="card col bg-success wow animate__backInDown" style="width: 18rem;">
+            <div class="card col bg-primary wow animate__backInDown" style="width: 18rem;">
                 <img src="images/4615407.jpg" class="card-img-top aboutUsImg" alt="dermatologist tested, handwashed in water droplet">
                 <div class="card-body">
                     <h3>Charity</h3>
@@ -70,7 +207,7 @@
                     </p>
                 </div>
             </div>
-            <div class="card col bg-warning wow animate__backInRight" style="width: 18rem;">
+            <div class="card col bg-primary wow animate__backInRight" style="width: 18rem;">
                 <img src="images/search.png" class="card-img-top aboutUsImg" alt="mignifing glass icon over internet planet icon">
                 <div class="card-body">
                     <h3>Learn the Truth!</h3>
@@ -80,7 +217,7 @@
         </div>
 
     <!-- Testimonials Heading -->
-        <div class="row bg-success wow animate__bounce">
+        <div class="row bg-primary wow animate__bounce">
             <h2>Testimonials</h2>
         </div>
 
@@ -111,7 +248,7 @@
         </div>
 
     <!-- Sponsors/Partners Heading -->
-        <div class="row bg-danger wow animate__rubberBand">
+        <div class="row bg-primary wow animate__rubberBand">
             <h2>Sponsors/Partners</h2>
         </div>
     
@@ -185,19 +322,19 @@
         </div>
 
     <!-- Recent Updates Heading -->
-        <div class="row bg-warning animate__flash">
+        <div class="row bg-primary animate__flash">
             <h2>Recent Updates</h2>
         </div>
     <!-- Recent Updates Cards -->
         <div class="row">
             <div class="card col bg-body-secondary wow animate__zoomIn" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="Placeholder image.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
             </div>
             <div class="card col bg-body-secondary wow animate__zoomIn" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="Placeholder image.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
